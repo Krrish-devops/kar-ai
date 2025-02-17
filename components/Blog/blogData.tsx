@@ -4,19 +4,19 @@ import { Blog } from "@/types/blog";
 const BlogData: Blog[] = [
   {
     _id: 1,
-    mainImage: "/images/blog/ai-innovation.png",
+    mainImage: "/images/blog/futurss.png",
     title: "The Future of AI in Business Automation",
     metadata: "Discover how AI is transforming industries through automation, predictive analytics, and intelligent decision-making.",
   },
   {
     _id: 2,
-    mainImage: "/images/blog/cyber-security.png",
+    mainImage: "/images/blog/blog-cyber.png",
     title: "Cybersecurity in the Age of AI",
     metadata: "Learn about the latest AI-driven cybersecurity threats and how businesses can protect themselves.",
   },
   {
     _id: 3,
-    mainImage: "/images/blog/data-science.png",
+    mainImage: "/images/blog/datasc.png",
     title: "Leveraging Data Science for Smarter Decisions",
     metadata: "How data science and AI work together to provide actionable insights for businesses and organizations.",
   },

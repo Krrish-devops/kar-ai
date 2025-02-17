@@ -56,7 +56,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-          hariharan@gmail.com
+          Kar ai @gmail.com
                 </a>
               </motion.div>
 
