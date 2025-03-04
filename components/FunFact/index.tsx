@@ -13,7 +13,7 @@ const FunFact = () => {
             width={335}
             height={384}
             src="/images/shape/shape-04.png"
-            alt="Kar Ai"
+            alt="Kar AI"
             className="absolute -left-15 -top-25 -z-1 lg:left-0"
           />
           <Image
@@ -56,14 +56,14 @@ const FunFact = () => {
             className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-              Kar Ai: Empowering Intelligent Automation
+              Kar AI: Empowering Intelligent Automation
             </h2>
             <p className="mx-auto lg:w-11/12">
-              Kar Ai is revolutionizing industries with its cutting-edge AI-powered solutions. From streamlining business processes to providing predictive insights, Kar Ai is at the forefront of innovation.
+              Kar AI is revolutionizing industries with its cutting-edge AI-powered solutions. From streamlining business processes to providing predictive insights, Kar AI is at the forefront of innovation.
             </p>
           </motion.div>
 
-          <div className="flex flex-wrap justify-center gap-8 lg:gap-42.5">
+          {/* <div className="flex flex-wrap justify-center gap-8 lg:gap-42.5">
             <motion.div
               variants={{
                 hidden: {
@@ -133,7 +133,7 @@ const FunFact = () => {
               </h3>
               <p className="text-lg lg:text-para2">Innovative Solutions</p>
             </motion.div>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* <!-- ===== Funfact End ===== --> */}

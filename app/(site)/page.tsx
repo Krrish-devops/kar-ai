@@ -12,6 +12,7 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import TestimonialProject from "@/components/ProjectTestimonial";
 
 export const metadata: Metadata = {
   title: "Kar Ai solutions",
@@ -24,7 +25,10 @@ export default function Home() {
   return (
     <main>
       <Hero />
+
+    
       <Brands />
+      <TestimonialProject />
       <Feature />
       <About />
       <FeaturesTab />
@@ -32,9 +36,10 @@ export default function Home() {
       <Integration />
      
       <Testimonial />
+      <Blog />
       {/* <Pricing /> */}
       <Contact />
-      <Blog />
+    
     </main>
   );
 }

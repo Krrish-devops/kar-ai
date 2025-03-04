@@ -1,51 +1,95 @@
-import SidebarLink from "@/components/Docs/SidebarLink";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Docs Page - Solid SaaS Boilerplate",
 
-  // other metadata
-  description: "This is Docs page for Solid Pro"
-};
+import { Autoplay, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function DocsPage() {
+import { motion } from "framer-motion";
+import SectionHeader from "@/components/Common/SectionHeader";
+
+import SingleTestimonial from "@/components/Testimonial/SingleTestimonial";
+import Testimonial from "@/components/Testimonial";
+import { testimonialData } from "@/components/Testimonial/testimonialData";
+
+
+
+
+
+const TestimonialProject = () => {
   return (
     <>
-      <section className="pb-16 pt-24 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
-        <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 lg:w-1/4">
-              <div className="sticky top-[74px] rounded-lg border border-white p-4 shadow-solid-4  transition-all  dark:border-strokedark dark:bg-blacksection">
-                <ul className="space-y-2">
-                  <SidebarLink />
-                </ul>
-              </div>
-            </div>
-
-            <div className="w-full px-4 lg:w-3/4">
-              <div className="blog-details blog-details-docs shadow-three dark:bg-gray-dark rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
-                <h1>Welcome to Startup Documentation</h1>
-
-                <p className="text-body-color dark:text-body-color-dark text-base">
-                  This document serves as a simple template to showcase a sample
-                  layout and format. It is solely created for demonstration
-                  purposes and is not intended for any official use.
-                </p>
-                <p className="text-body-color dark:text-body-color-dark text-base">
-                  Please visit:{" "}
-                  <b>
-                    <a href="https://nextjstemplates.com/docs">
-                      nextjstemplates.com/docs
-                    </a>
-                  </b>{" "}
-                  to check out the real docs, setup guide and even video
-                  instructions
-                </p>
-              </div>
-            </div>
+      <section>
+        <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+          {/* <!-- Section Title Start --> */}
+          <div className="animate_top mx-auto text-center mt-10">
+            <SectionHeader
+            headerInfo={{
+              title: `Our Developers`,
+              subtitle: `Meet the Kar AI Team`,
+              description: `Our talented developers are the backbone of Kar AI, pushing the boundaries of AI-driven technology.`,
+              }}
+            />
           </div>
+          {/* <!-- Section Title End --> */}
         </div>
+
+        <motion.div
+          variants={{
+            hidden: {
+              opacity: 0,
+              y: -20,
+            },
+
+            visible: {
+              opacity: 1,
+              y: 0,
+            },
+          }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="animate_top mx-auto mt-15 max-w-c-1235 px-4 md:px-8 xl:mt-20 xl:px-0"
+        >
+          {/* <!-- Slider main container --> */}
+          <div className="swiper testimonial-01 mb-20 pb-22.5">
+            {/* <!-- Additional required wrapper --> */}
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={2}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Autoplay, Pagination]}
+              breakpoints={{
+                // when window width is >= 640px
+                0: {
+                  slidesPerView: 1,
+                },
+                // when window width is >= 768px
+                768: {
+                  slidesPerView: 2,
+                },
+              }}
+            >
+              {testimonialData.map((review) => (
+                <SwiperSlide key={review?.id}>
+                  <SingleTestimonial review={review} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </motion.div>
       </section>
     </>
   );
-}
+};
+
+export default TestimonialProject;

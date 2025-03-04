@@ -22,19 +22,19 @@ const BlogData: Blog[] = [
   },
   {
     _id: 4,
-    mainImage: "/images/blog/cloud-computing.png",
+    mainImage: "/images/blog/blog-cyber.png",
     title: "Cloud Computing Trends in 2024",
     metadata: "Explore the advancements in cloud technology and how they impact business scalability and security.",
   },
   {
     _id: 5,
-    mainImage: "/images/blog/ai-chatbots.png",
+    mainImage: "/images/blog/futurss.png",
     title: "AI-Powered Chatbots: Enhancing Customer Experience",
     metadata: "A look at how AI-driven chatbots are revolutionizing customer service and business interactions.",
   },
   {
     _id: 6,
-    mainImage: "/images/blog/software-development.png",
+    mainImage: "/images/blog/datasc.png",
     title: "Best Practices for Scalable Software Development",
     metadata: "Insights into building robust, scalable, and efficient software systems for modern enterprises.",
   },

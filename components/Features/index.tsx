@@ -15,7 +15,7 @@ const Feature = () => {
   headerInfo={{
     title: "KAR AI FEATURES",
     subtitle: "Web and App Solution Features",
-    description: `Discover the powerful features of Kar Ai's web and app solutions. 
+    description: `Discover the powerful features of Kar AI's web and app solutions. 
     Our platform is designed to provide seamless, efficient, and intelligent 
     automation for your business needs.`,
   }}

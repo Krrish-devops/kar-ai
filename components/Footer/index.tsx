@@ -46,7 +46,7 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">
-                Empowering Businesses with Kar Ai IT Solutions
+                Empowering Businesses with Kar AI IT Solutions
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
@@ -56,7 +56,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-          Kar ai @gmail.com
+       karaidevteam@gmail.com
                 </a>
               </motion.div>
 
@@ -119,7 +119,7 @@ const Footer = () => {
                   </ul>
                 </motion.div>
 
-                <motion.div
+                {/* <motion.div
                   variants={{
                     hidden: {
                       opacity: 0,
@@ -175,7 +175,7 @@ const Footer = () => {
                       </a>
                     </li>
                   </ul>
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
                   variants={{
@@ -263,7 +263,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <ul className="flex items-center gap-8">
+              {/* <ul className="flex items-center gap-8">
                 <li>
                   <a href="#" className="hover:text-primary">
                     English
@@ -279,7 +279,7 @@ const Footer = () => {
                     Support
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </motion.div>
 
             <motion.div
@@ -301,7 +301,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} kar Ai . All rights reserved
+                &copy; {new Date().getFullYear()} Kar AI . All rights reserved
               </p>
             </motion.div>
 

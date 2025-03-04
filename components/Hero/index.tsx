@@ -16,10 +16,10 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-               Kar Ai IT Web Solutions
+               Kar AI Solutions
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-                Empowering Businesses with Kar Ai  IT Solutions
+                Empowering Businesses with Kar AI Solutions
               </h1>
               <p>
                 Unlock the potential of your business with our cutting-edge IT web solutions. From responsive web design and development to cloud integration, cybersecurity, and AI-driven automation, we provide innovative solutions tailored to your needs.
