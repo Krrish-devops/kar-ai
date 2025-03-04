@@ -35,7 +35,7 @@ export const testimonialData: Testimonial[] = [
     id: 5,
     name: "Kanaga Priya",
     designation: "Frontend Developer",
-    content: "Clarit Solutions has nurtured my passion for frontend development, providing me opportunities to explore new frameworks and UI/UX improvements. This has helped in creating seamless user experiences for our clients.",
+    content: "Kar AI Solutions has nurtured my passion for frontend development, providing me opportunities to explore new frameworks and UI/UX improvements. This has helped in creating seamless user experiences for our clients.",
     image: image2,
   },
   {

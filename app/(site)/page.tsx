@@ -30,7 +30,7 @@ export default function Home() {
       <Brands />
       <TestimonialProject />
       <Feature />
-      <About />
+      {/* <About /> */}
       <FeaturesTab />
       <FunFact />
       <Integration />
