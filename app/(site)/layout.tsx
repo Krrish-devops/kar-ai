@@ -10,6 +10,8 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
+import { Provider } from "react-redux";
+import store from "@/components/redux/store";
 
 export default function RootLayout({
   children,
@@ -19,18 +21,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`dark:bg-black ${inter.className}`}>
-        <ThemeProvider
-          enableSystem={false}
-          attribute="class"
-          defaultTheme="dark"
-        >
-          <Lines />
-          <Header />
-          <ToasterContext />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </ThemeProvider>
+        <Provider store={store}>
+          <ThemeProvider
+            enableSystem={false}
+            attribute="class"
+            defaultTheme="dark"
+          >
+            <Lines />
+            <Header />
+            <ToasterContext />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </ThemeProvider>
+        </Provider>
       </body>
     </html>
   );

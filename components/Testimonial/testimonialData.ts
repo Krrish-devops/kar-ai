@@ -6,7 +6,7 @@ export const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "Hari Haran",
-    designation: "Frontend & QA Engineer",
+    designation: "Frontend & Go lang developer",
     content: "Kar Ai Solutions has provided me with a platform to enhance my frontend and QA skills, empowering me to build efficient and user-friendly applications. Through constant learning, I have contributed to optimizing project workflows.",
     image: image1,
   },
@@ -50,6 +50,13 @@ export const testimonialData: Testimonial[] = [
     name: "Anandhi Selvaraj",
     designation: "Frontend Developer",
     content: "Kar Ai Solutions has been a great learning ground for me, strengthening my frontend skills and pushing me to build innovative solutions. My contributions have helped in enhancing product usability and customer satisfaction.",
+    image: image2,
+  },
+  {
+    id: 8,
+    name: "Haja ",
+    designation: "MERN Stack Developer",
+    content: "At Kar Ai Solutions, I have grown into a well-rounded full-stack developer. With guidance from experienced mentors, I have played a key role in building scalable and high-performing applications.",
     image: image2,
   }
 ];
