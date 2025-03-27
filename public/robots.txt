@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://karai.techfreak.info
+
+# Sitemaps
+Sitemap: https://karai.techfreak.info/sitemap.xml
