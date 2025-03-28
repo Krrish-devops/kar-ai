@@ -32,7 +32,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="karai, kar ai solution, web development, mobile app development, AI solutions, AI company in Karai, Maharajan Popular Software Company"
+          content="karai, kar ai solution,kar ai solutions,karaisolutions, web development, mobile app development, AI solutions, AI company in Karai, Maharajan Popular Software Company"
         />
         <meta
           property="og:title"
@@ -42,10 +42,22 @@ export default function Home() {
           property="og:description"
           content="Expert in AI, Web, and Mobile App development. Based in Karai, providing intelligent business solutions."
         />
-        <meta property="og:image" content="/logo.png" />
+        <meta
+          property="og:image"
+          content="https://karai.techfreak.info/images/favicon.ico"
+        />
         <meta property="og:url" content="https://karai.techfreak.info" />
         <meta name="robots" content="index, follow" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://karai.techfreak.info/images/favicon.ico"
+          type="image/x-icon"
+        />
+        <link
+          rel="shortcut icon"
+          href="https://karai.techfreak.info/images/favicon.ico"
+          type="image/x-icon"
+        />
       </Head>
 
       <main>
